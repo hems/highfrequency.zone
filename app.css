@@ -96,3 +96,10 @@ body {
   color: #fff;
   font-family: 'Indie Flower', cursive;
 }
+
+/* line 51 : /Volumes/backpack/git/highfrequency/src/stylus/app.styl */
+.buy_now {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
