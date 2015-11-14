@@ -27,26 +27,32 @@ $ ->
   video.setAttribute "src", "videos/dec05.mp4"
 
   video.controls = true;
-  video.autoplay = true;
+  # video.autoplay = true;
+
+    
 
   document.body.appendChild(video);
+
+  $( 'video' ).click -> video.play()
+  
 
   source = context.createMediaElementSource(video);
 
   gainNode = context.createGain();
-  gainNode.gain.value = 0.5;
+  gainNode.gain.value = 0.6;
 
-  filter = context.createBiquadFilter();
-  filter.type = 1;
-  filter.frequency.value = 4000;
+  # filter = context.createBiquadFilter();
+  # filter.type = 1;
+  # filter.frequency.value = 4000;
 
   source.connect gainNode
-  gainNode.connect filter
+  # gainNode.connect filter
 
 
   scope.addSignal source, '#243F24'
 
-  filter.connect context.destination
+  gainNode.connect context.destination
+  # filter.connect context.destination
   # source.connect context.destination
   
   $( 'video' )[0].addEventListener 'ended', ->
