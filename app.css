@@ -106,12 +106,46 @@ body {
 }
 
 /* line 55 : /Volumes/backpack/git/highfrequency/src/stylus/app.styl */
+.facebook_event {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* line 59 : /Volumes/backpack/git/highfrequency/src/stylus/app.styl */
+
+/* line 60 : /Volumes/backpack/git/highfrequency/src/stylus/app.styl */
+.facebook_event img.out {
+  width: 147.5px;
+  height: 133px;
+}
+
+/* line 64 : /Volumes/backpack/git/highfrequency/src/stylus/app.styl */
+.facebook_event img.over {
+  display: none;
+}
+
+/* line 67 : /Volumes/backpack/git/highfrequency/src/stylus/app.styl */
+
+/* line 69 : /Volumes/backpack/git/highfrequency/src/stylus/app.styl */
+
+/* line 70 : /Volumes/backpack/git/highfrequency/src/stylus/app.styl */
+.facebook_event:hover img.over {
+  display: block;
+}
+
+/* line 73 : /Volumes/backpack/git/highfrequency/src/stylus/app.styl */
+.facebook_event:hover img.out {
+  display: none;
+}
+
+/* line 76 : /Volumes/backpack/git/highfrequency/src/stylus/app.styl */
 canvas {
   width: 100%;
   height: 100%;
 }
 
-/* line 59 : /Volumes/backpack/git/highfrequency/src/stylus/app.styl */
+/* line 80 : /Volumes/backpack/git/highfrequency/src/stylus/app.styl */
 video {
   width: 960px;
   height: 540px;
